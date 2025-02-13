@@ -28,7 +28,7 @@ The key thing using a standalone Spring Boot application is to create a **Fat Ja
 1. Add an **start-class** to point to the class acting as the Entry Point as the example below.
 The reason we are doing so is, we need to reference the **.jar** file in the [Dockerfile](https://github.com/bzdgn/docker-spring-boot-java-web-service-example/blob/master/Dockerfile);
 
-```
+```dsd
     <properties>
         <start-class>com.levo.dockerexample.DockerApp</start-class>
     </properties>
