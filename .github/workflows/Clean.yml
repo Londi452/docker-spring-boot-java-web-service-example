@@ -40,13 +40,13 @@ jobs:
         id: create-pr
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: develop
+          branch: "develop"
           base: main
           title: "demo for auto pr"
           committer: ${{ steps.git-data.outputs.author-name }} <${{ steps.git-data.outputs.author-email }}>
           author: ${{ steps.git-data.outputs.author-name }} <${{ steps.git-data.outputs.author-email }}>
           body: "This is to show automatic PR creation"
-          token: ${{ secrets.LONDI }}
+          token: ${{ secrets.T_TOKEN}}
 
       # Step 8: Approve Pull Request
       - name: Approve Pull Request
